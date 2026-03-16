@@ -269,18 +269,20 @@
   }
 }
 
-img.author__avatar {
-  /* 1. 强行拉开比例：宽窄高长 */
-  width: 130px !important; 
-  height: 175px !important; /* 增加高度，给椭圆弧度留出空间 */
+.author__avatar img {
+  /* 关键：强行拉开比例，不再是 1:1 */
+  width: 160px !important; 
+  height: 200px !important; 
   
-  /* 2. 只要比例不是 1:1，设置 50% 就会自动生成顺滑的椭圆，不会有切口 */
+  /* 比例不一致时，50% 会自动变成完美的纵向椭圆 */
   border-radius: 50% !important; 
   
-  /* 3. 核心：防止图片变形，并确保它填满这个椭圆 */
+  /* 核心：确保图片不拉伸，像相片一样填充 */
   object-fit: cover; 
   
-  /* 4. 细节优化：加个白边和阴影，增加“洗出来的照片”质感 */
-  border: 3px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  /* 复刻学长的细边框和留白 */
+  padding: 4px;
+  border: 1px solid #e1e4e8;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(27,31,35,0.12);
 }
