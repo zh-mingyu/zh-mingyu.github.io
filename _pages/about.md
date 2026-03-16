@@ -32,7 +32,7 @@ My research interests include *multimedia computing, information retrieval*.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div>< img src='images/ConeSep-CVPR26.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/ConeSep-CVPR26.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval** [*Coming Soon*]
@@ -43,7 +43,7 @@ My research interests include *multimedia computing, information retrieval*.
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2026</div>< img src='images/HINT-ICASSP26.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2026</div><img src='images/HINT-ICASSP26.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network** [*Coming Soon*]
