@@ -268,3 +268,13 @@
     display: none;
   }
 }
+
+img.author__avatar {
+
+  border-radius: 54% / 46% !important; /* 椭圆比例 */
+
+  object-fit: cover; /* 防止图片变形 */
+
+  border: 2px solid #f0f0f0; /* 顺便加个淡灰色边框，更有质感 */
+
+}
