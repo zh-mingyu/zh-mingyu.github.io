@@ -61,5 +61,6 @@ My research interests include *multimedia computing, information retrieval*.
 - 基于互补性引导解耦的组合图像检索方法及系统 - 公开号: *CN120144811A* - [[详情]](https://www.baiten.cn/patent/detail/3af290afe06cce7ff17d1af87d3ba3b7845214512dc12e86?sc=&fq=&type=&sort=&sortField=&q=%E9%BB%84%E9%92%A6%E7%A3%8A+%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6&rows=10#1/CN202510142418.4/detail/abst) -->
 # 🏆 Honors and Awards
 - *2025.10*, **Grand Prize** in the CICAS Smart Power Scenario Competition.
+
 # 📖 Educations
 - *2023.09 - Present*, Undergrad in the School of Software, Shandong University. 
