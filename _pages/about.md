@@ -31,7 +31,6 @@ My research interests include *multimedia computing, information retrieval*.
 
 
 # 📝 Publications 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/ConeSep-CVPR26.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -52,8 +51,6 @@ My research interests include *multimedia computing, information retrieval*.
 
 </div>
 </div>
-
-
 <!-- # 🔖 Patent  -->
 <!-- - 基于实体挖掘和修改关系绑定的组合图像检索方法及系统 - 公开号: *CN120067365A* - [[详情]](https://www.baiten.cn/patent/detail/3af290afe06cce7ff17d1af87d3ba3b7845214512dc12e86?sc=&fq=&type=&sort=&sortField=&q=%E9%BB%84%E9%92%A6%E7%A3%8A+%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6&rows=10#1/CN202411903224.3/detail/abst)
 - 基于自适应中间粒度聚合网络的组合图像检索方法及系统 - 公开号: *CN120104822A* - [[详情]](https://www.baiten.cn/patent/detail/3af290afe06cce7ff17d1af87d3ba3b7845214512dc12e86?sc=&fq=&type=&sort=&sortField=&q=%E9%BB%84%E9%92%A6%E7%A3%8A+%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6&rows=10#1/CN202510274983.6/detail/abst)
