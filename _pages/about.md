@@ -32,30 +32,25 @@ My research interests include *multimedia computing, information retrieval*.
 
 # 📝 Publications 
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPR 2026</div>
-      <img src='images/ConeSep-CVPR26.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-    ***ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval*** [*Coming Soon*]
-    [Zixu Li](https://lee-zixu.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm), [Zhiwei Chen](https://zivchen-ty.github.io/), [***Mingyu Zhang***]([【你的主页】](https://zh-mingyu.github.io/)), [Zhiheng Fu](https://zhihfu.github.io), [Liqiang Nie](https://liqiangnie.github.io/index.html)
-  </div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div>< img src='images/ConeSep-CVPR26.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval** [*Coming Soon*]
+
+[Zixu Li](https://lee-zixu.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm), [Zhiwei Chen](https://zivchen-ty.github.io/), [***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zhiheng Fu](https://zhihfu.github.io), [Liqiang Nie](https://liqiangnie.github.io/index.html)
+
+</div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ICASSP 2026</div>
-      <img src='images/HINT-ICASSP26.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-    ***HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network*** [*Coming Soon*]
-    [***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zixu Li](https://lee-zixu.github.io), [Zhiwei Chen](https://zivchen-ty.github.io/), [Zhiheng Fu](https://zhihfu.github.io), Xiaowei Zhu, Jiajia Nie, [Yinwei Wei](https://weiyinwei.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm)
-  </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2026</div>< img src='/images/HINT-ICASSP26.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network** [*Coming Soon*]
+
+[***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zixu Li](https://lee-zixu.github.io), [Zhiwei Chen](https://zivchen-ty.github.io/), [Zhiheng Fu](https://zhihfu.github.io), Xiaowei Zhu, Jiajia Nie, [Yinwei Wei](https://weiyinwei.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm)
+
+</div>
 </div>
 
 
