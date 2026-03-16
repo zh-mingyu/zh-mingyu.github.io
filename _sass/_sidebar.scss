@@ -270,19 +270,19 @@
 }
 
 .author__avatar img {
-  /* 关键：强行拉开比例，不再是 1:1 */
-  width: 160px !important; 
-  height: 200px !important; 
+  /* 1. 核心：大幅度拉开比例，宽度收窄，高度增加 */
+  width: 150px !important; 
+  height: 210px !important; /* 150:210 刚好是 1:1.4 的黄金证件照比例 */
   
-  /* 比例不一致时，50% 会自动变成完美的纵向椭圆 */
+  /* 2. 比例拉开后，直接设 50% 就会自动变成这种瘦长的椭圆，不会有切口 */
   border-radius: 50% !important; 
   
-  /* 核心：确保图片不拉伸，像相片一样填充 */
+  /* 3. 防止机器人（或未来的帅照）因比例改变而变形 */
   object-fit: cover; 
   
-  /* 复刻学长的细边框和留白 */
-  padding: 4px;
+  /* 4. 复刻学长的质感：超细边框 + 极简阴影 */
+  padding: 2px;
   border: 1px solid #e1e4e8;
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(27,31,35,0.12);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
