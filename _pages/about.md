@@ -40,7 +40,7 @@ My research interests include *multimedia computing, information retrieval*.
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
-    **ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval** [*Coming Soon*]
+    ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval [*Coming Soon*]
   </div>
 </div>
 
@@ -52,7 +52,7 @@ My research interests include *multimedia computing, information retrieval*.
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
-    **HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network** [*Coming Soon*]
+    HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network [*Coming Soon*]
   </div>
 </div>
 
