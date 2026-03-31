@@ -45,9 +45,11 @@ My research interests include *multimedia computing, information retrieval*.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2026</div><img src='images/HINT-ICASSP26.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network** [*Coming Soon*]
+**HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network**
 
 [***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zixu Li](https://lee-zixu.github.io), [Zhiwei Chen](https://zivchen-ty.github.io/), [Zhiheng Fu](https://zhihfu.github.io), Xiaowei Zhu, Jiajia Nie, [Yinwei Wei](https://weiyinwei.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm)
+
+[[Paper]](https://arxiv.org/abs/2603.26341) [[Code]](https://github.com/zh-mingyu/HINT)
 
 </div>
 </div>
