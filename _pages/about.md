@@ -49,7 +49,7 @@ My research interests include *multimedia computing, information retrieval*.
 
 [***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zixu Li](https://lee-zixu.github.io), [Zhiwei Chen](https://zivchen-ty.github.io/), [Zhiheng Fu](https://zhihfu.github.io), Xiaowei Zhu, Jiajia Nie, [Yinwei Wei](https://weiyinwei.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm)
 
-[[Paper]](https://arxiv.org/abs/2603.26341) [[Code]](https://github.com/zh-mingyu/HINT)
+[[Paper]](https://arxiv.org/abs/2603.26341) [[Website]](https://zh-mingyu.github.io/HINT.github.io/) [[Code]](https://github.com/zh-mingyu/HINT)
 
 </div>
 </div>
