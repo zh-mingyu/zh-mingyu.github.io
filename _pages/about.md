@@ -26,8 +26,8 @@ My research interests include *multimedia computing, information retrieval*.
 
 # 🔥 News
 - *2026.03.03*: &nbsp;🎉🎉 One paper was accepted by **CVPR 2026**! Congratulations to all co-authors!
+- *2026.1.18*: &nbsp;🎉🎉 One paper has been accepted to **ICASSP 2026**! Congratulations to our co-authors!
 - *2025.10.18*: &nbsp;🎉🎉 As the core member, our team wins the Grand Prize in the CICAS Smart Power Scenario Competition. Congratulations to all team members!
-- *2024.1.18*: &nbsp;🎉🎉 One paper has been accepted to **ICASSP 2026**! Congratulations to our co-authors!
 
 
 # 📝 Publications 
