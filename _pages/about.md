@@ -73,6 +73,9 @@ Here's the link to our repo! Feel free to check it out. Any feedback or support 
 
 
 # 📝 Publications 
+
+### ("†" denotes project leader, "✉" denotes corresponding author)
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/ConeSep-CVPR26.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
