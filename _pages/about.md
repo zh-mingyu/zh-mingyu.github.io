@@ -24,6 +24,48 @@ I'm currently an Undergrad student in the [School of Software](https://www.sc.sd
 My research interests include *multimedia computing, information retrieval*.
 
 
+<!-- > I am a strong advocate for open science. All the projects I have been primarily involved in have been fully open-sourced. We warmly invite you to explore our projects, share your feedback, and connect with us for further discussion.
+> 
+> 我是开放科学的坚定拥趸，主要参与的项目均已全面开源。欢迎大家访问我们的项目主页，非常期待听到您的真实反馈，随时欢迎找我交流探讨！ -->
+
+# <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height:30px; width:auto; vertical-align:middle; margin-right:8px;"> Our open source projects
+
+Here's the link to our repo! Feel free to check it out. Any feedback or support are always welcome. Thanks for taking a look! ✨
+<br>
+
+
+<table style="width:100%; border:none; text-align:center; background-color:transparent;">
+  <tr style="border:none;">
+    <td style="width:30%; border:none; vertical-align:top; padding-top:30px;">
+      <img src="../images/consep-logo.png" alt="ConeSep" style="height:65px; width:auto; border-radius:8px; margin-bottom:8px;"><br>
+      <b>ConeSep (CVPR'26)</b><br>
+      <span style="font-size: 0.9em;">
+        <a href="https://lee-zixu.github.io/ConeSep.github.io/" target="_blank">Web</a> | 
+        <a href="https://github.com/Lee-zixu/ConeSep" target="_blank">Code</a>  
+        <!-- <a href="https://ojs.aaai.org/index.php/AAAI/article/view/39181" target="_blank">Paper</a> -->
+      </span>
+    </td>  
+    <td style="width:30%; border:none; vertical-align:top; padding-top:30px;">
+      <img src="../images/hint-logo.png" alt="HINT" style="height:65px; width:auto; border-radius:8px; margin-bottom:8px;"><br>
+      <b>HINT (ICASSP'26)</b><br>
+      <span style="font-size: 0.9em;">
+        <a href="https://zh-mingyu.github.io/HINT.github.io/" target="_blank">Web</a> | 
+        <a href="https://github.com/zh-mingyu/HINT" target="_blank">Code</a> | 
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32541" target="_blank">Paper</a>
+      </span>
+    </td>
+
+  </tr>
+</table>
+
+
+
+
+<!-- I warmly welcome academic discussions and potential collaborations. Please feel free to contact me if you are interested in my research or possible cooperation.
+
+欢迎就我的研究方向展开学术交流与合作，如果您有相关研究兴趣或合作意向，欢迎随时联系我。-->
+
+
 # 🔥 News
 - *2026.03.03*: &nbsp;🎉🎉 One paper was accepted by **CVPR 2026**! Congratulations to all co-authors!
 - *2026.1.18*: &nbsp;🎉🎉 One paper has been accepted to **ICASSP 2026**! Congratulations to our co-authors!
