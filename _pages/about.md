@@ -62,12 +62,13 @@ redirect_from:
   .filter-btn { padding: 6px 14px; border: 1px solid #e1e4e8; border-radius: 20px; background-color: #f6f8fa; color: #586069; font-size: 0.85em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
   .filter-btn.active { background: linear-gradient(135deg, #ff4d6d, #ff7eb3); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(255,77,109,0.3); }
   
-  /* 🌟 Paper Box Styles (1:1 Reference Match) 🌟 */
+  /* 🌟 Paper Box Styles (Forced Left-Right Layout) 🌟 */
   .floating-card { transition: opacity 0.3s ease, transform 0.3s ease; }
   .paper-box {
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
+    display: flex !important;
+    flex-direction: row !important; /* 强制水平排列 */
+    flex-wrap: nowrap !important; /* 强制不换行 */
+    gap: 28px !important;
     padding: 24px;
     margin-bottom: 24px;
     border-radius: 16px;
@@ -83,8 +84,8 @@ redirect_from:
   }
   
   .paper-box-image {
-    width: 42%;
-    flex-shrink: 0;
+    width: 40% !important; /* 强制左边图片占 40% */
+    flex: 0 0 40% !important;
     position: relative;
   }
   .paper-box-image img {
@@ -111,7 +112,8 @@ redirect_from:
   }
   
   .paper-box-text {
-    width: 58%;
+    width: 60% !important; /* 强制右边文字占 60% */
+    flex: 1 1 auto !important;
     display: flex;
     flex-direction: column;
   }
@@ -195,9 +197,11 @@ redirect_from:
     filter: brightness(1.05);
   }
 
-  @media (max-width: 800px) { 
-    .paper-box { flex-direction: column; gap: 16px; padding: 18px; }
-    .paper-box-image, .paper-box-text { width: 100%; }
+  /* 仅在非常极限的小屏幕（如手机竖屏）才折叠 */
+  @media (max-width: 600px) { 
+    .paper-box { flex-direction: column !important; flex-wrap: wrap !important; gap: 16px !important; padding: 18px; }
+    .paper-box-image { width: 100% !important; flex: 1 1 100% !important; }
+    .paper-box-text { width: 100% !important; flex: 1 1 100% !important; }
     .opensource-grid { grid-template-columns: 1fr; } 
   }
 </style>
