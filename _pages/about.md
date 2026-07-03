@@ -51,7 +51,7 @@ My research interests include *Multimodal Large Language Models, robust represen
 
 [Zixu Li](https://lee-zixu.github.io), [Yupeng Hu](https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm)✉, [Zhiwei Chen](https://zivchen-ty.github.io/), [***Mingyu Zhang***](https://zh-mingyu.github.io/), [Zhiheng Fu](https://zhihfu.github.io), [Liqiang Nie](https://liqiangnie.github.io/index.html)
 
-[[Website]](https://lee-zixu.github.io/ConeSep.github.io/) [[Code]](https://github.com/Lee-zixu/ConeSep) [[Code]](https://github.com/iLearn-Lab/CVPR26-ConeSep)
+[[Paper]](https://arxiv.org/abs/2604.20358) [[Website]](https://lee-zixu.github.io/ConeSep.github.io/) [[Code]](https://github.com/Lee-zixu/ConeSep)
 
 </div>
 </div>
