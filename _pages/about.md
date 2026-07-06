@@ -62,111 +62,124 @@ redirect_from:
   .filter-btn { padding: 6px 14px; border: 1px solid #e1e4e8; border-radius: 20px; background-color: #f6f8fa; color: #586069; font-size: 0.85em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
   .filter-btn.active { background: linear-gradient(135deg, #ff4d6d, #ff7eb3); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(255,77,109,0.3); }
   
-  /* 🌟 Paper Box Styles (Aggressive Grid Layout for Left-Right) 🌟 */
-  .floating-card { transition: opacity 0.3s ease, transform 0.3s ease; }
-  .paper-box {
-    display: grid !important;
-    grid-template-columns: 40% minmax(0, 1fr) !important; /* 强行切分：左40%，右剩余空间 */
-    gap: 28px !important;
+  /* 🌟 核心修复：彻底避开主题全局样式的独立排版系统 🌟 */
+  .zmy-card-container {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .zmy-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important; /* 强制垂直居中 */
+    gap: 32px !important; /* 左右间距 */
     padding: 24px !important;
     margin-bottom: 24px !important;
     border-radius: 16px !important;
     background: #ffffff !important;
     border: 1px solid rgba(255,77,109,0.15) !important;
     box-shadow: 0 8px 24px rgba(255,77,109,0.08) !important;
-    align-items: flex-start !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+    box-sizing: border-box !important;
   }
-  .paper-box:hover {
+  .zmy-card:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 12px 32px rgba(255,77,109,0.18) !important;
     border: 1px solid rgba(255,77,109,0.35) !important;
   }
   
-  .paper-box-image {
-    width: 100% !important;
+  /* 左侧图片区域：强行霸占40% */
+  .zmy-card-img {
+    flex: 0 0 40% !important;
+    width: 40% !important;
+    max-width: 40% !important;
     position: relative !important;
     margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
   }
-  .paper-box-image img {
+  .zmy-card-img img {
     width: 100% !important;
-    max-width: 100% !important;
+    min-width: 100% !important; /* 强行拉伸填满40%宽度 */
     height: auto !important;
     border-radius: 8px !important;
     border: 1px solid #eaecef !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
     display: block !important;
-  }
-  
-  .badge {
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    background: linear-gradient(135deg, #ff4d6d 0%, #ff7eb3 100%);
-    color: #fff;
-    padding: 5px 14px;
-    font-size: 0.85em;
-    font-weight: 850;
-    border-radius: 8px 0 12px 0;
-    z-index: 10;
-    box-shadow: 2px 2px 10px rgba(255,77,109,0.4);
-    letter-spacing: 0.5px;
-  }
-  
-  .paper-box-text {
-    width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .zmy-badge {
+    position: absolute !important;
+    top: -1px !important;
+    left: -1px !important;
+    background: linear-gradient(135deg, #ff4d6d 0%, #ff7eb3 100%) !important;
+    color: #fff !important;
+    padding: 5px 14px !important;
+    font-size: 0.85rem !important;
+    font-weight: 850 !important;
+    border-radius: 8px 0 12px 0 !important;
+    z-index: 10 !important;
+    box-shadow: 2px 2px 10px rgba(255,77,109,0.4) !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+  }
+  
+  /* 右侧文字区域：霸占剩下60% */
+  .zmy-card-body {
+    flex: 1 1 55% !important;
+    width: 55% !important;
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
   }
   
-  .paper-title {
-    font-size: 1.25em !important;
+  .zmy-card-title {
+    font-size: 1.25rem !important;
     font-weight: 850 !important;
     color: #012F63 !important;
-    margin: 0 0 8px 0 !important;
-    line-height: 1.35 !important;
+    margin: 0 0 10px 0 !important;
+    line-height: 1.4 !important;
   }
   
-  .paper-venue {
-    font-size: 0.95em !important;
+  .zmy-card-venue {
+    font-size: 0.95rem !important;
     font-style: italic !important;
     color: #586069 !important;
     margin: 0 0 14px 0 !important;
   }
   
-  .paper-authors {
-    font-size: 1.05em !important;
+  .zmy-card-authors {
+    font-size: 1.05rem !important;
     color: #24292e !important;
-    margin: 0 0 18px 0 !important;
+    margin: 0 0 16px 0 !important;
     line-height: 1.6 !important;
     font-weight: 600 !important;
   }
-  .paper-authors a {
-    color: #012F63;
-    text-decoration: none;
-  }
-  .paper-authors a:hover {
-    text-decoration: underline;
-  }
+  .zmy-card-authors a { color: #012F63; text-decoration: none; }
+  .zmy-card-authors a:hover { text-decoration: underline; }
   
-  /* Pink/Purple Gradient Highlight for Author */
-  .author-self {
+  .zmy-author-self {
     font-weight: 850 !important;
     font-style: italic !important;
     background: linear-gradient(135deg, #d500f9 0%, #ff1744 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
-    font-size: 1.05em !important;
+    font-size: 1.05rem !important;
   }
   
-  .badge-container {
+  .zmy-badge-container {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 10px !important;
+    gap: 8px !important;
     margin: 0 0 18px 0 !important;
   }
-  .inner-tag-badge {
-    font-size: 0.82em !important;
+  .zmy-inner-tag {
+    font-size: 0.82rem !important;
     padding: 4px 12px !important;
     background-color: #f3f4f6 !important;
     color: #374151 !important;
@@ -175,15 +188,21 @@ redirect_from:
     font-weight: 500 !important;
     margin: 0 !important;
   }
+  .zmy-inner-tag.active {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    border-color: #a5d6a7 !important;
+    font-weight: bold !important;
+  }
   
-  .paper-link-container {
+  .zmy-link-container {
     display: flex !important;
     flex-wrap: wrap !important;
     gap: 12px !important;
     margin: 0 !important;
   }
-  .paper-link-btn {
-    font-size: 0.88em !important;
+  .zmy-btn {
+    font-size: 0.88rem !important;
     padding: 6px 18px !important;
     background: linear-gradient(135deg, #ff4d6d 0%, #ff758c 100%) !important;
     color: #ffffff !important;
@@ -194,16 +213,19 @@ redirect_from:
     box-shadow: 0 4px 12px rgba(255, 77, 109, 0.35) !important;
     transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
     margin: 0 !important;
+    display: inline-block !important;
   }
-  .paper-link-btn:hover {
+  .zmy-btn:hover {
     transform: translateY(-2px) !important;
     box-shadow: 0 6px 16px rgba(255, 77, 109, 0.45) !important;
     filter: brightness(1.05) !important;
   }
 
-  /* 仅在非常极限的小屏幕才折叠为上下布局 */
-  @media (max-width: 650px) { 
-    .paper-box { grid-template-columns: 1fr !important; gap: 16px !important; padding: 18px !important; }
+  /* 仅在窄屏幕（手机）变成上下结构 */
+  @media (max-width: 768px) { 
+    .zmy-card { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; padding: 20px !important; }
+    .zmy-card-img { width: 100% !important; max-width: 100% !important; flex: none !important; }
+    .zmy-card-body { width: 100% !important; flex: none !important; }
     .opensource-grid { grid-template-columns: 1fr; } 
   }
 </style>
@@ -309,10 +331,70 @@ redirect_from:
     <!-- Filter buttons will be auto-generated by JS -->
   </div>
 
-  <div class="paper-box floating-card" data-tags="CVPR 2026, Multimodal Understanding, Robustness"><div class="paper-box-image"><div class="badge">CVPR 2026</div><img src="images/ConeSep-CVPR26.png" alt="ConeSep"></div><div class="paper-box-text"><div class="paper-title">ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval</div><div class="paper-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</div><div class="paper-authors"><a href="https://lee-zixu.github.io">Zixu Li</a>, <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>📧, <a href="https://zivchen-ty.github.io/">Zhiwei Chen</a>, <a href="https://zh-mingyu.github.io/" class="author-self">Mingyu Zhang</a>, <a href="https://zhihfu.github.io">Zhiheng Fu</a>, <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a></div><div class="badge-container"><span class="inner-tag-badge">CVPR 2026</span><span class="inner-tag-badge">Multimodal Understanding</span><span class="inner-tag-badge">Robustness</span></div><div class="paper-link-container"><a href="https://arxiv.org/abs/2604.20358" class="paper-link-btn">[Paper]</a><a href="https://lee-zixu.github.io/ConeSep.github.io/" class="paper-link-btn">[Website]</a><a href="https://github.com/Lee-zixu/ConeSep" class="paper-link-btn">[Code]</a></div></div></div>
+  <div class="zmy-card-container">
+  
+    <!-- ConeSep Paper -->
+    <div class="zmy-card" data-tags="CVPR 2026, Multimodal Understanding, Robustness">
+      <div class="zmy-card-img">
+        <div class="zmy-badge">CVPR 2026</div>
+        <img src="images/ConeSep-CVPR26.png" alt="ConeSep">
+      </div>
+      <div class="zmy-card-body">
+        <div class="zmy-card-title">ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval</div>
+        <div class="zmy-card-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</div>
+        <div class="zmy-card-authors">
+          <a href="https://lee-zixu.github.io">Zixu Li</a>, 
+          <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>📧, 
+          <a href="https://zivchen-ty.github.io/">Zhiwei Chen</a>, 
+          <a href="https://zh-mingyu.github.io/" class="zmy-author-self">Mingyu Zhang</a>, 
+          <a href="https://zhihfu.github.io">Zhiheng Fu</a>, 
+          <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>
+        </div>
+        <div class="zmy-badge-container">
+          <span class="zmy-inner-tag">CVPR 2026</span>
+          <span class="zmy-inner-tag">Multimodal Understanding</span>
+          <span class="zmy-inner-tag">Robustness</span>
+        </div>
+        <div class="zmy-link-container">
+          <a href="https://arxiv.org/abs/2604.20358" class="zmy-btn">[Paper]</a>
+          <a href="https://lee-zixu.github.io/ConeSep.github.io/" class="zmy-btn">[Website]</a>
+          <a href="https://github.com/Lee-zixu/ConeSep" class="zmy-btn">[Code]</a>
+        </div>
+      </div>
+    </div>
 
-  <div class="paper-box floating-card" data-tags="ICASSP 2026, First Author, Multimodal Understanding"><div class="paper-box-image"><div class="badge">ICASSP 2026</div><img src="images/HINT-ICASSP26.png" alt="HINT"></div><div class="paper-box-text"><div class="paper-title">HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network</div><div class="paper-venue">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)</div><div class="paper-authors"><a href="https://zh-mingyu.github.io/" class="author-self">Mingyu Zhang</a>, <a href="https://lee-zixu.github.io">Zixu Li</a>, <a href="https://zivchen-ty.github.io/">Zhiwei Chen</a>, <a href="https://zhihfu.github.io">Zhiheng Fu</a>, Xiaowei Zhu, Jiajia Nie, <a href="https://weiyinwei.github.io">Yinwei Wei</a>, <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>📧</div><div class="badge-container"><span class="inner-tag-badge">ICASSP 2026</span><span class="inner-tag-badge">First Author</span><span class="inner-tag-badge">Multimodal Understanding</span></div><div class="paper-link-container"><a href="https://arxiv.org/abs/2603.26341" class="paper-link-btn">[Paper]</a><a href="https://zh-mingyu.github.io/HINT.github.io/" class="paper-link-btn">[Website]</a><a href="https://github.com/zh-mingyu/HINT" class="paper-link-btn">[Code]</a></div></div></div>
-
+    <!-- HINT Paper -->
+    <div class="zmy-card" data-tags="ICASSP 2026, First Author, Multimodal Understanding">
+      <div class="zmy-card-img">
+        <div class="zmy-badge">ICASSP 2026</div>
+        <img src="images/HINT-ICASSP26.png" alt="HINT">
+      </div>
+      <div class="zmy-card-body">
+        <div class="zmy-card-title">HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network</div>
+        <div class="zmy-card-venue">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)</div>
+        <div class="zmy-card-authors">
+          <a href="https://zh-mingyu.github.io/" class="zmy-author-self">Mingyu Zhang</a>, 
+          <a href="https://lee-zixu.github.io">Zixu Li</a>, 
+          <a href="https://zivchen-ty.github.io/">Zhiwei Chen</a>, 
+          <a href="https://zhihfu.github.io">Zhiheng Fu</a>, 
+          Xiaowei Zhu, Jiajia Nie, 
+          <a href="https://weiyinwei.github.io">Yinwei Wei</a>, 
+          <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>📧
+        </div>
+        <div class="zmy-badge-container">
+          <span class="zmy-inner-tag">ICASSP 2026</span>
+          <span class="zmy-inner-tag">First Author</span>
+          <span class="zmy-inner-tag">Multimodal Understanding</span>
+        </div>
+        <div class="zmy-link-container">
+          <a href="https://arxiv.org/abs/2603.26341" class="zmy-btn">[Paper]</a>
+          <a href="https://zh-mingyu.github.io/HINT.github.io/" class="zmy-btn">[Website]</a>
+          <a href="https://github.com/zh-mingyu/HINT" class="zmy-btn">[Code]</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 </div>
 
 # 🏆 Honors and Awards
@@ -348,11 +430,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // 2. Paper Tags Filter
-  const wrapper = document.getElementById('publications-wrapper');
+  const wrapper = document.querySelector('.zmy-card-container');
   const filterContainer = document.getElementById('filter-container');
   if (!wrapper || !filterContainer) return;
 
-  const paperBoxes = Array.from(wrapper.querySelectorAll('.paper-box'));
+  const paperBoxes = Array.from(wrapper.querySelectorAll('.zmy-card'));
   let tagCounts = {};
   let activeTags = new Set();
 
@@ -400,10 +482,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const boxTags = boxTagsString ? boxTagsString.split(',').map(t => t.trim()) : [];
       const isMatched = activeTags.size === 0 || Array.from(activeTags).every(activeTag => boxTags.includes(activeTag));
       
-      box.style.opacity = activeTags.size > 0 && !isMatched ? '0.25' : '1';
-      box.style.transform = activeTags.size > 0 && !isMatched ? 'scale(0.98)' : 'scale(1)';
+      box.style.display = activeTags.size > 0 && !isMatched ? 'none' : 'flex';
       
-      box.querySelectorAll('.inner-tag-badge').forEach(badge => {
+      box.querySelectorAll('.zmy-inner-tag').forEach(badge => {
         badge.classList.toggle('active', activeTags.has(badge.textContent));
       });
     });
