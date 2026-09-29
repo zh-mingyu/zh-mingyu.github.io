@@ -253,7 +253,7 @@ redirect_from:
   
   <div class="lang-panel" data-lang-panel="zh" role="tabpanel">
     <div class="research-intro">
-      <p>欢迎来到我的主页！我目前是山东大学<a href="https://www.sc.sdu.edu.cn">软件学院</a>的本科生，师从 Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>，并由 Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a> 共同指导，同时与 Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a> 保持紧密合作。</p>
+      <p>欢迎来到我的主页！我目前是<a href="https://www.sdu.edu.cn">山东大学</a><a href="https://www.sc.sdu.edu.cn">软件学院</a>的本科生，师从 Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>，并由 Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a> 共同指导，同时与 Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a> 保持紧密合作。</p>
       <p>我的研究兴趣包括<strong>世界模型、智能体与信息检索</strong>。</p>
     </div>
   </div>
