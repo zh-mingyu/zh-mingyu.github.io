@@ -36,7 +36,7 @@ redirect_from:
   body.lang-en .i18n-en-inline { display: inline !important; }
 
   /* Sections */
-  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--accent-pink); border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(120,152,236,0.1); color: #012F63; }
+  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid #123c72; border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(120,152,236,0.1); color: #012F63; }
   .opensource-section, .news-section { margin: 2rem 0 2.2rem 0; padding: 1.2rem; border-radius: 18px; border: 1px solid rgba(1,47,99,0.05); background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
   .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: #fff1f4; color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
   .opensource-title, .news-title { margin: 0.65rem 0 0.3rem 0; color: #012F63; font-size: 1.45rem; font-weight: 850; }
@@ -264,7 +264,7 @@ redirect_from:
     <p>I am a member of the Intelligent Media Research Center (iLearn). I believe open-source research makes multimodal learning more reproducible and collaborative. My major projects and our lab projects are open-source; please visit <a href="https://github.com/iLearn-Lab">iLearn Lab</a> and feel free to share your valuable feedback.</p>
   </div>
   <div class="i18n-zh">
-    <p>我隶属于智能媒体研究中心 (iLearn)，并相信开源研究能够提升多模态学习的可复现性与协作性。我主要参与的项目与实验室项目持续开源，欢迎访问 <a href="https://github.com/iLearn-Lab">iLearn Lab</a> 并提出宝贵意见。</p>
+    <p>作为开放科学的坚定拥趸，我致力于将研究成果开源，以促进社区的交流与发展。我隶属于智能媒体研究中心 (iLearn)，并相信开源研究能够提升多模态学习的可复现性与协作性。我主要参与的项目与实验室项目持续开源，欢迎访问 <a href="https://github.com/iLearn-Lab">iLearn Lab</a> 并提出宝贵意见。</p>
   </div>
 </div>
 
@@ -317,26 +317,29 @@ redirect_from:
   <div class="news-grid">
     <div class="news-card">
       <div class="news-date">2026.09.20</div>
-      <div class="news-text">🎉🎉 Thrilled to share that our team won the <strong>2nd Place 🥈</strong> in the SceneFun3D Benchmark Challenge at the Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop @ ECCV 2026! Congratulations to all members!</div>
+      <div class="news-text"><span class="i18n-en">🎉🎉 Thrilled to share that our team won the <strong>2nd Place 🥈</strong> in the SceneFun3D Benchmark Challenge at the Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop @ ECCV 2026! Congratulations to all members!</span><span class="i18n-zh">🎉🎉 很高兴地分享，我们的团队在 ECCV 2026 OpenSUN3D Workshop 的 SceneFun3D Benchmark Challenge 中获得第 2 名 🥈！祝贺所有成员！</span></div>
     </div>
     <div class="news-card">
       <div class="news-date">2026.03.03</div>
-      <div class="news-text">🎉🎉 One paper was accepted by <strong>CVPR 2026</strong>! Congratulations to all co-authors!</div>
+      <div class="news-text"><span class="i18n-en">🎉🎉 One paper was accepted by <strong>CVPR 2026</strong>! Congratulations to all co-authors!</span><span class="i18n-zh">🎉🎉 一篇论文被 <strong>CVPR 2026</strong> 接收！祝贺所有合作者！</span></div>
     </div>
     <div class="news-card">
       <div class="news-date">2026.01.18</div>
-      <div class="news-text">🎉🎉 One paper has been accepted to <strong>ICASSP 2026</strong>! Congratulations to our co-authors!</div>
+      <div class="news-text"><span class="i18n-en">🎉🎉 One paper has been accepted to <strong>ICASSP 2026</strong>! Congratulations to our co-authors!</span><span class="i18n-zh">🎉🎉 一篇论文被 <strong>ICASSP 2026</strong> 接收！祝贺所有合作者！</span></div>
     </div>
     <div class="news-card">
       <div class="news-date">2025.10.18</div>
-      <div class="news-text">🏆 As the core member, our team wins the <strong>Grand Prize</strong> in the CICAS Smart Power Scenario Competition. Congratulations to all team members!</div>
+      <div class="news-text"><span class="i18n-en">🏆 As the core member, our team wins the <strong>Grand Prize</strong> in the CICAS Smart Power Scenario Competition. Congratulations to all team members!</span><span class="i18n-zh">🏆 作为核心成员，我们的团队在 CICAS 智慧电力场景竞赛中获得<strong>特等奖</strong>。祝贺所有团队成员！</span></div>
     </div>
   </div>
 </div>
 
-# 📝 Publications
+<h1><span class="i18n-en-inline">📝 Publications</span><span class="i18n-zh-inline">📝 论文</span></h1>
 
-<div class="paper-note">⚓️ denotes project leader; 📧 denotes corresponding author.</div>
+<div class="paper-note">
+  <span class="i18n-en">⚓️ denotes project leader; 📧 denotes corresponding author.</span>
+  <span class="i18n-zh">⚓️ 表示项目负责人；📧 表示通讯作者。</span>
+</div>
 
 <div id="publications-wrapper">
   <div id="filter-container">
@@ -407,14 +410,20 @@ redirect_from:
   </div>
 </div>
 
-# 🏆 Honors and Awards
-*   *2025.10*, **Grand Prize** in the CICAS Smart Power Scenario Competition.
+<h1><span class="i18n-en-inline">🏆 Honors and Awards</span><span class="i18n-zh-inline">🏆 荣誉与奖励</span></h1>
+<ul>
+  <li><span class="i18n-en-inline"><em>2025.10</em>, <strong>Grand Prize</strong> in the CICAS Smart Power Scenario Competition.</span><span class="i18n-zh-inline"><em>2025.10</em>，CICAS 智慧电力场景竞赛<strong>特等奖</strong>。</span></li>
+</ul>
 
-# 🥈 Competitions
-*   **2nd place 🥈**, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. [Link](https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119)
+<h1><span class="i18n-en-inline">🥈 Competitions</span><span class="i18n-zh-inline">🥈 竞赛</span></h1>
+<ul>
+  <li><span class="i18n-en-inline"><strong>2nd place 🥈</strong>, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. <a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">Link</a></span><span class="i18n-zh-inline"><strong>第 2 名 🥈</strong>，ECCV OpenSUN3D Workshop，SceneFun3D Benchmark Challenge，2026 年。<a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">链接</a></span></li>
+</ul>
 
-# 📖 Educations
-*   *2023.09 - Present*, Undergrad in the School of Software, Shandong University.
+<h1><span class="i18n-en-inline">📖 Educations</span><span class="i18n-zh-inline">📖 教育经历</span></h1>
+<ul>
+  <li><span class="i18n-en-inline"><em>2023.09 - Present</em>, Undergrad in the School of Software, Shandong University.</span><span class="i18n-zh-inline"><em>2023.09 - 至今</em>，山东大学软件学院本科生。</span></li>
+</ul>
 
 
 <script>
