@@ -246,7 +246,7 @@ redirect_from:
   
   <div class="lang-panel active" data-lang-panel="en" role="tabpanel">
     <div class="research-intro">
-      <p>I'm currently an undergraduate student in the <a href="https://www.sc.sdu.edu.cn">School of Software</a>, <a href="https://www.sdu.edu.cn">Shandong University</a>, under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a> and Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a>, working closely with Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a>.</p>
+      <p>Welcome to my homepage! I'm currently an undergraduate student in the <a href="https://www.sc.sdu.edu.cn">School of Software</a>, <a href="https://www.sdu.edu.cn">Shandong University</a>, under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a> and Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a>, working closely with Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a>.</p>
       <p>My research interests include <strong>World Model, Agent and Information Retrieval</strong>.</p>
     </div>
   </div>
