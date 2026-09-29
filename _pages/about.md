@@ -415,9 +415,9 @@ redirect_from:
   <li><span class="i18n-en-inline"><em>2025.10</em>, <strong>Grand Prize</strong> in the CICAS Smart Power Scenario Competition.</span><span class="i18n-zh-inline"><em>2025.10</em>，CICAS 智慧电力场景竞赛<strong>特等奖</strong>。</span></li>
 </ul>
 
-<h1><span class="i18n-en-inline">🥈 Competitions</span><span class="i18n-zh-inline">🥈 竞赛</span></h1>
+<h1><span class="i18n-en-inline">🥈 Competitions</span><span class="i18n-zh-inline">🏅 竞赛</span></h1>
 <ul>
-  <li><span class="i18n-en-inline"><strong>2nd place 🥈</strong>, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. <a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">Link</a></span><span class="i18n-zh-inline"><strong>亚军 🥈</strong>，ECCV OpenSUN3D Workshop，SceneFun3D Benchmark Challenge，2026。<a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">链接</a></span></li>
+  <li><span class="i18n-en-inline"><strong>2nd place 🥈</strong>, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. <a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">Link</a></span><span class="i18n-zh-inline"><strong>亚军 🥈</strong>，ECCV OpenSUN3D Workshop，SceneFun3D Benchmark Challenge，2026.<a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">链接</a></span></li>
 </ul>
 
 <h1><span class="i18n-en-inline">📖 Educations</span><span class="i18n-zh-inline">📖 教育经历</span></h1>
