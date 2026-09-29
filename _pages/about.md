@@ -17,13 +17,13 @@ redirect_from:
 
 <style>
   /* Core UI & Bilingual Styles */
-  :root { --accent-pink: #c77d97; --accent-blue: #7198e8; --accent-purple: #9a82c8; --accent-ink: #123c72; }
+  :root { --accent-pink: #e36f9b; --accent-blue: #7898ec; --accent-purple: #ad79d1; --accent-ink: #123c72; }
   .research-intro { font-size: 1.02em; line-height: 1.72; color: #24292e; margin-bottom: 1rem; }
   .research-intro strong { color: #012F63; }
   .language-switcher { margin: 1rem 0 1.4rem 0; }
   .language-tabs { display: inline-flex; gap: 0.35rem; padding: 0.28rem; border-radius: 999px; background: #f6f8fa; border: 1px solid rgba(1,47,99,0.08); box-shadow: 0 4px 14px rgba(1,47,99,0.05); margin-bottom: 1rem; }
   .lang-tab { border: 0; border-radius: 999px; padding: 0.42rem 0.92rem; background: transparent; color: #586069; font-size: 0.86rem; font-weight: 850; cursor: pointer; transition: all 0.2s ease; }
-  .lang-tab:hover, .lang-tab.active { color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%); box-shadow: 0 6px 16px rgba(113,152,232,0.2); }
+  .lang-tab:hover, .lang-tab.active { color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%); box-shadow: 0 6px 16px rgba(120,152,236,0.24); }
   .lang-panel { display: none; }
   .lang-panel.active { display: block; }
   
@@ -36,32 +36,33 @@ redirect_from:
   body.lang-en .i18n-en-inline { display: inline !important; }
 
   /* Sections */
-  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--accent-pink); border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(113,152,232,0.08); color: #012F63; }
+  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--accent-pink); border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(120,152,236,0.1); color: #012F63; }
   .opensource-section, .news-section { margin: 2rem 0 2.2rem 0; padding: 1.2rem; border-radius: 18px; border: 1px solid rgba(1,47,99,0.05); background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
-  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: rgba(113,152,232,0.12); color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: rgba(120,152,236,0.14); color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
   .opensource-title, .news-title { margin: 0.65rem 0 0.3rem 0; color: #012F63; font-size: 1.45rem; font-weight: 850; }
   
   /* Projects Grid */
   .opensource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; padding-right: 0.35rem; }
   .opensource-card { display: flex; flex-direction: column; align-items: center; text-align: center; min-height: 225px; padding: 1rem 0.85rem; border-radius: 15px; border: 1px solid rgba(0,0,0,0.06); background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.03); transition: transform 0.24s ease, border-color 0.24s, box-shadow 0.24s; }
-  .opensource-card:hover { transform: translateY(-6px); border-color: rgba(113,152,232,0.35); box-shadow: 0 14px 32px rgba(113,152,232,0.14); }
+  .opensource-card:hover { transform: translateY(-6px); border-color: rgba(120,152,236,0.42); box-shadow: 0 14px 32px rgba(120,152,236,0.18); }
   .opensource-card img { width: auto; height: 98px; max-width: 80%; object-fit: contain; border-radius: 8px; margin-bottom: 0.75rem; display: block; margin-left: auto; margin-right: auto; }
   .opensource-card-title { color: #012F63; font-size: 0.95rem; font-weight: 850; margin-bottom: 0.25rem; }
   .opensource-card-meta { color: var(--accent-ink); font-size: 0.78rem; font-weight: 750; margin-bottom: 0.4rem; }
-  .opensource-card-links a { display: inline-flex; padding: 0.18rem 0.52rem; border-radius: 999px; border: 1px solid rgba(113,152,232,0.4); background: rgba(113,152,232,0.08); color: var(--accent-ink) !important; font-size: 0.72rem; font-weight: 700; text-decoration: none !important; margin: 0.15rem; transition: all 0.2s; }
+  .opensource-card-links { position: relative; z-index: 2; }
+  .opensource-card-links a { position: relative; z-index: 3; pointer-events: auto; cursor: pointer; display: inline-flex; padding: 0.18rem 0.52rem; border-radius: 999px; border: 1px solid rgba(120,152,236,0.46); background: rgba(120,152,236,0.1); color: var(--accent-ink) !important; font-size: 0.72rem; font-weight: 700; text-decoration: none !important; margin: 0.15rem; transition: all 0.2s; }
   .opensource-card-links a:hover { background: var(--accent-blue); color: #fff !important; }
 
   /* News */
   .news-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; max-height: 400px; overflow-y: auto; padding-right: 0.35rem; }
   .news-card { display: grid; grid-template-columns: 6.8rem 1fr; gap: 0.8rem; align-items: start; padding: 0.9rem 0.95rem; border-radius: 14px; border: 1px solid rgba(0,0,0,0.05); background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.03); transition: transform 0.22s ease; }
-  .news-card:hover { transform: translateY(-4px); border-color: rgba(113,152,232,0.3); }
-  .news-date { display: inline-flex; justify-content: center; padding: 0.26rem 0.5rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%); font-size: 0.78rem; font-weight: 850; }
+  .news-card:hover { transform: translateY(-4px); border-color: rgba(120,152,236,0.36); }
+  .news-date { display: inline-flex; justify-content: center; padding: 0.26rem 0.5rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%); font-size: 0.78rem; font-weight: 850; }
   .news-text { color: #24292e; font-size: 0.92rem; line-height: 1.55; }
   
   /* Filter System */
   #filter-container { margin: 20px 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .filter-btn { padding: 6px 14px; border: 1px solid #e1e4e8; border-radius: 20px; background-color: #f6f8fa; color: #586069; font-size: 0.85em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-  .filter-btn.active { background: linear-gradient(135deg, var(--accent-pink), var(--accent-blue)); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(113,152,232,0.3); }
+  .filter-btn.active { background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(120,152,236,0.36); }
   
   /* 🌟 核心修复：彻底避开主题全局样式的独立排版系统 🌟 */
   .zmy-card-container {
@@ -78,15 +79,16 @@ redirect_from:
     margin-bottom: 24px !important;
     border-radius: 16px !important;
     background: #ffffff !important;
-    border: 1px solid rgba(113,152,232,0.2) !important;
-    box-shadow: 0 8px 24px rgba(113,152,232,0.1) !important;
+    border: 1px solid rgba(120,152,236,0.24) !important;
+    box-shadow: 0 8px 24px rgba(120,152,236,0.12) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
     box-sizing: border-box !important;
   }
+  .zmy-card.is-filtered { display: none !important; }
   .zmy-card:hover {
     transform: translateY(-4px) !important;
-    box-shadow: 0 12px 32px rgba(113,152,232,0.2) !important;
-    border: 1px solid rgba(113,152,232,0.4) !important;
+    box-shadow: 0 12px 32px rgba(120,152,236,0.24) !important;
+    border: 1px solid rgba(120,152,236,0.46) !important;
   }
   
   /* 左侧图片区域：强行霸占40% */
@@ -115,14 +117,14 @@ redirect_from:
     position: absolute !important;
     top: -1px !important;
     left: -1px !important;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%) !important;
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%) !important;
     color: #fff !important;
     padding: 5px 14px !important;
     font-size: 0.85rem !important;
     font-weight: 850 !important;
     border-radius: 8px 0 12px 0 !important;
     z-index: 10 !important;
-    box-shadow: 2px 2px 10px rgba(113,152,232,0.4) !important;
+    box-shadow: 2px 2px 10px rgba(120,152,236,0.46) !important;
     letter-spacing: 0.5px !important;
     margin: 0 !important;
   }
@@ -167,7 +169,7 @@ redirect_from:
   .zmy-author-self {
     font-weight: 850 !important;
     font-style: italic !important;
-    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 100%) !important;
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-size: 1.05rem !important;
@@ -205,20 +207,20 @@ redirect_from:
   .zmy-btn {
     font-size: 0.88rem !important;
     padding: 6px 18px !important;
-    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%) !important;
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-purple) 48%, var(--accent-blue) 100%) !important;
     color: #ffffff !important;
     border-radius: 999px !important;
     font-weight: 850 !important;
     text-decoration: none !important;
     border: none !important;
-    box-shadow: 0 4px 12px rgba(113, 152, 232, 0.35) !important;
+    box-shadow: 0 4px 12px rgba(120, 152, 236, 0.4) !important;
     transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
     margin: 0 !important;
     display: inline-block !important;
   }
   .zmy-btn:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 16px rgba(113, 152, 232, 0.45) !important;
+    box-shadow: 0 6px 16px rgba(120, 152, 236, 0.5) !important;
     filter: brightness(1.05) !important;
   }
 
@@ -280,9 +282,9 @@ redirect_from:
       <div class="opensource-card-title">HINT</div>
       <div class="opensource-card-meta"><span class="i18n-en-inline">ICASSP 2026</span><span class="i18n-zh-inline">ICASSP 2026</span></div>
       <div class="opensource-card-links">
-        <a href="https://arxiv.org/abs/2603.26341" target="_blank">Paper</a>
-        <a href="https://zh-mingyu.github.io/HINT.github.io/" target="_blank">Project</a>
-        <a href="https://github.com/zh-mingyu/HINT" target="_blank">Code</a>
+        <a href="https://arxiv.org/abs/2603.26341">Paper</a>
+        <a href="https://zh-mingyu.github.io/HINT.github.io/">Project</a>
+        <a href="https://github.com/zh-mingyu/HINT">Code</a>
       </div>
     </div>
     <div class="opensource-card">
@@ -290,9 +292,9 @@ redirect_from:
       <div class="opensource-card-title">ConeSep</div>
       <div class="opensource-card-meta"><span class="i18n-en-inline">CVPR 2026</span><span class="i18n-zh-inline">CVPR 2026</span></div>
       <div class="opensource-card-links">
-        <a href="https://arxiv.org/abs/2604.20358" target="_blank">Paper</a>
-        <a href="https://lee-zixu.github.io/ConeSep.github.io/" target="_blank">Project</a>
-        <a href="https://github.com/Lee-zixu/ConeSep" target="_blank">Code</a>
+        <a href="https://arxiv.org/abs/2604.20358">Paper</a>
+        <a href="https://lee-zixu.github.io/ConeSep.github.io/">Project</a>
+        <a href="https://github.com/Lee-zixu/ConeSep">Code</a>
       </div>
     </div>
   </div>
@@ -468,6 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
   sortedTags.forEach(tag => {
     const btn = document.createElement('button');
     btn.className = 'filter-btn';
+    btn.type = 'button';
     btn.textContent = `${tag} (${tagCounts[tag]})`;
     btn.onclick = () => {
       if (activeTags.has(tag)) {
@@ -488,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const boxTags = boxTagsString ? boxTagsString.split(',').map(t => t.trim()) : [];
       const isMatched = activeTags.size === 0 || Array.from(activeTags).every(activeTag => boxTags.includes(activeTag));
       
-      box.style.display = activeTags.size > 0 && !isMatched ? 'none' : 'flex';
+      box.classList.toggle('is-filtered', activeTags.size > 0 && !isMatched);
       
       box.querySelectorAll('.zmy-inner-tag').forEach(badge => {
         badge.classList.toggle('active', activeTags.has(badge.textContent));
