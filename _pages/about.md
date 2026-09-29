@@ -317,7 +317,7 @@ redirect_from:
   <div class="news-grid">
     <div class="news-card">
       <div class="news-date">2026.09.20</div>
-      <div class="news-text"><span class="i18n-en">🎉🎉 Thrilled to share that our team won the <strong>2nd Place 🥈</strong> in the SceneFun3D Benchmark Challenge at the Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop @ ECCV 2026! Congratulations to all members!</span><span class="i18n-zh">🎉🎉 很高兴地分享，我们的团队在 ECCV 2026 OpenSUN3D Workshop 的 SceneFun3D Benchmark Challenge 中获得第 2 名 🥈！祝贺所有成员！</span></div>
+      <div class="news-text"><span class="i18n-en">🎉🎉 Thrilled to share that our team won the <strong>2nd Place 🥈</strong> in the SceneFun3D Benchmark Challenge at the Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop @ ECCV 2026! Congratulations to all members!</span><span class="i18n-zh">🎉🎉  我们团队在 ECCV 2026 Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop 的 SceneFun3D Benchmark Challenge 中获得亚军🥈！祝贺所有成员！</span></div>
     </div>
     <div class="news-card">
       <div class="news-date">2026.03.03</div>
