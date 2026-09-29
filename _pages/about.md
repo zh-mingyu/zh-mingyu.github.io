@@ -38,8 +38,9 @@ redirect_from:
   /* Sections */
   .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--accent-pink); border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(120,152,236,0.1); color: #012F63; }
   .opensource-section, .news-section { margin: 2rem 0 2.2rem 0; padding: 1.2rem; border-radius: 18px; border: 1px solid rgba(1,47,99,0.05); background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
-  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: rgba(120,152,236,0.14); color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: #fff1f4; color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
   .opensource-title, .news-title { margin: 0.65rem 0 0.3rem 0; color: #012F63; font-size: 1.45rem; font-weight: 850; }
+  .opensource-description { margin: 0 0 1rem 0; color: #5b6575; font-size: 1rem; line-height: 1.55; }
   
   /* Projects Grid */
   .opensource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; padding-right: 0.35rem; }
@@ -245,7 +246,7 @@ redirect_from:
   
   <div class="lang-panel active" data-lang-panel="en" role="tabpanel">
     <div class="research-intro">
-      <p>Welcome to my homepage! I'm currently an Undergrad student in the <a href="https://www.sc.sdu.edu.cn">School of Software</a>, <a href="https://www.sdu.edu.cn">Shandong University</a>, under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>, co-advised by Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a>, and closely collaborating with Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a>.</p>
+      <p>Under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a> and Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a>, working closely with Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a>.</p>
       <p>My research interests include <strong>World Model, Agent and Information Retrieval</strong>.</p>
     </div>
   </div>
@@ -260,10 +261,10 @@ redirect_from:
 
 <div class="open-science-note">
   <div class="i18n-en">
-    <p>I am a strong advocate for open science. All the projects I have been primarily involved in have been fully open-sourced. We warmly invite you to explore our projects, share your feedback, and connect with us for further discussion!</p>
+    <p>I am a member of the Intelligent Media Research Center (iLearn). I believe open-source research makes multimodal learning more reproducible and collaborative. My major projects and our lab projects are open-source; please visit <a href="https://github.com/iLearn-Lab">iLearn Lab</a> and feel free to share your valuable feedback.</p>
   </div>
   <div class="i18n-zh">
-    <p>我是开放科学的坚定拥趸，主要参与的项目均已全面开源。欢迎大家访问我们的项目主页，非常期待听到您的真实反馈，随时欢迎找我交流探讨！</p>
+    <p>我隶属于智能媒体研究中心 (iLearn)，并相信开源研究能够提升多模态学习的可复现性与协作性。我主要参与的项目与实验室项目持续开源，欢迎访问 <a href="https://github.com/iLearn-Lab">iLearn Lab</a> 并提出宝贵意见。</p>
   </div>
 </div>
 
@@ -275,6 +276,10 @@ redirect_from:
   <div class="opensource-title">
     <span class="i18n-en-inline">Projects</span>
     <span class="i18n-zh-inline">项目主页</span>
+  </div>
+  <div class="opensource-description">
+    <span class="i18n-en">Below are representative project pages and repositories from my recent works. Feedback, issues, and pull requests are warmly welcome.</span>
+    <span class="i18n-zh">以下是我近期工作的代表性项目页面和代码仓库。欢迎提出反馈、问题和 Pull Request。</span>
   </div>
   <div class="opensource-grid">
     <div class="opensource-card">
