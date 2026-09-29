@@ -388,7 +388,7 @@ redirect_from:
         <div class="zmy-card-venue">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)</div>
         <div class="zmy-card-authors">
           <a href="https://zh-mingyu.github.io/" class="zmy-author-self">Mingyu Zhang</a>, 
-          <a href="https://lee-zixu.github.io">Zixu Li</a>, 
+          <a href="https://lee-zixu.github.io">Zixu Li⚓️</a>, 
           <a href="https://zivchen-ty.github.io/">Zhiwei Chen</a>, 
           <a href="https://zhihfu.github.io">Zhiheng Fu</a>, 
           Xiaowei Zhu, Jiajia Nie, 
@@ -417,7 +417,7 @@ redirect_from:
 
 <h1><span class="i18n-en-inline">🥈 Competitions</span><span class="i18n-zh-inline">🥈 竞赛</span></h1>
 <ul>
-  <li><span class="i18n-en-inline"><strong>2nd place 🥈</strong>, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. <a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">Link</a></span><span class="i18n-zh-inline"><strong>第 2 名 🥈</strong>，ECCV OpenSUN3D Workshop，SceneFun3D Benchmark Challenge，2026。<a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">链接</a></span></li>
+  <li><span class="i18n-en-inline"><strong>2nd place 🥈</strong>, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. <a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">Link</a></span><span class="i18n-zh-inline"><strong>亚军 🥈</strong>，ECCV OpenSUN3D Workshop，SceneFun3D Benchmark Challenge，2026。<a href="https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119">链接</a></span></li>
 </ul>
 
 <h1><span class="i18n-en-inline">📖 Educations</span><span class="i18n-zh-inline">📖 教育经历</span></h1>
