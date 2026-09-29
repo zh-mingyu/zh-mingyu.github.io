@@ -17,12 +17,13 @@ redirect_from:
 
 <style>
   /* Core UI & Bilingual Styles */
+  :root { --accent-pink: #c77d97; --accent-blue: #7198e8; --accent-purple: #9a82c8; --accent-ink: #123c72; }
   .research-intro { font-size: 1.02em; line-height: 1.72; color: #24292e; margin-bottom: 1rem; }
   .research-intro strong { color: #012F63; }
   .language-switcher { margin: 1rem 0 1.4rem 0; }
   .language-tabs { display: inline-flex; gap: 0.35rem; padding: 0.28rem; border-radius: 999px; background: #f6f8fa; border: 1px solid rgba(1,47,99,0.08); box-shadow: 0 4px 14px rgba(1,47,99,0.05); margin-bottom: 1rem; }
   .lang-tab { border: 0; border-radius: 999px; padding: 0.42rem 0.92rem; background: transparent; color: #586069; font-size: 0.86rem; font-weight: 850; cursor: pointer; transition: all 0.2s ease; }
-  .lang-tab:hover, .lang-tab.active { color: #fff; background: linear-gradient(135deg, #ff4d6d 0%, #ff7eb3 100%); box-shadow: 0 6px 16px rgba(255,77,109,0.2); }
+  .lang-tab:hover, .lang-tab.active { color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%); box-shadow: 0 6px 16px rgba(113,152,232,0.2); }
   .lang-panel { display: none; }
   .lang-panel.active { display: block; }
   
@@ -35,32 +36,32 @@ redirect_from:
   body.lang-en .i18n-en-inline { display: inline !important; }
 
   /* Sections */
-  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid #ff4d6d; border-radius: 12px; background: linear-gradient(180deg, #fff5f7 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(255,77,109,0.06); color: #012F63; }
+  .open-science-note { margin: 1rem 0 1.8rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--accent-pink); border-radius: 12px; background: linear-gradient(180deg, #f5f7ff 0%, #ffffff 100%); box-shadow: 0 6px 18px rgba(113,152,232,0.08); color: #012F63; }
   .opensource-section, .news-section { margin: 2rem 0 2.2rem 0; padding: 1.2rem; border-radius: 18px; border: 1px solid rgba(1,47,99,0.05); background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
-  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: rgba(255,77,109,0.1); color: #ff4d6d; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+  .section-kicker { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.28rem 0.75rem; border-radius: 999px; background: rgba(113,152,232,0.12); color: var(--accent-ink); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
   .opensource-title, .news-title { margin: 0.65rem 0 0.3rem 0; color: #012F63; font-size: 1.45rem; font-weight: 850; }
   
   /* Projects Grid */
   .opensource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; padding-right: 0.35rem; }
   .opensource-card { display: flex; flex-direction: column; align-items: center; text-align: center; min-height: 225px; padding: 1rem 0.85rem; border-radius: 15px; border: 1px solid rgba(0,0,0,0.06); background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.03); transition: transform 0.24s ease, border-color 0.24s, box-shadow 0.24s; }
-  .opensource-card:hover { transform: translateY(-6px); border-color: rgba(255,77,109,0.3); box-shadow: 0 14px 32px rgba(255,77,109,0.12); }
+  .opensource-card:hover { transform: translateY(-6px); border-color: rgba(113,152,232,0.35); box-shadow: 0 14px 32px rgba(113,152,232,0.14); }
   .opensource-card img { width: auto; height: 98px; max-width: 80%; object-fit: contain; border-radius: 8px; margin-bottom: 0.75rem; display: block; margin-left: auto; margin-right: auto; }
   .opensource-card-title { color: #012F63; font-size: 0.95rem; font-weight: 850; margin-bottom: 0.25rem; }
-  .opensource-card-meta { color: #ff4d6d; font-size: 0.78rem; font-weight: 750; margin-bottom: 0.4rem; }
-  .opensource-card-links a { display: inline-flex; padding: 0.18rem 0.52rem; border-radius: 999px; border: 1px solid rgba(255,77,109,0.3); background: rgba(255,77,109,0.05); color: #ff4d6d !important; font-size: 0.72rem; font-weight: 700; text-decoration: none !important; margin: 0.15rem; transition: all 0.2s; }
-  .opensource-card-links a:hover { background: #ff4d6d; color: #fff !important; }
+  .opensource-card-meta { color: var(--accent-ink); font-size: 0.78rem; font-weight: 750; margin-bottom: 0.4rem; }
+  .opensource-card-links a { display: inline-flex; padding: 0.18rem 0.52rem; border-radius: 999px; border: 1px solid rgba(113,152,232,0.4); background: rgba(113,152,232,0.08); color: var(--accent-ink) !important; font-size: 0.72rem; font-weight: 700; text-decoration: none !important; margin: 0.15rem; transition: all 0.2s; }
+  .opensource-card-links a:hover { background: var(--accent-blue); color: #fff !important; }
 
   /* News */
   .news-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; max-height: 400px; overflow-y: auto; padding-right: 0.35rem; }
   .news-card { display: grid; grid-template-columns: 6.8rem 1fr; gap: 0.8rem; align-items: start; padding: 0.9rem 0.95rem; border-radius: 14px; border: 1px solid rgba(0,0,0,0.05); background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.03); transition: transform 0.22s ease; }
-  .news-card:hover { transform: translateY(-4px); border-color: rgba(255,77,109,0.2); }
-  .news-date { display: inline-flex; justify-content: center; padding: 0.26rem 0.5rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, #ff4d6d 0%, #ff7eb3 100%); font-size: 0.78rem; font-weight: 850; }
+  .news-card:hover { transform: translateY(-4px); border-color: rgba(113,152,232,0.3); }
+  .news-date { display: inline-flex; justify-content: center; padding: 0.26rem 0.5rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%); font-size: 0.78rem; font-weight: 850; }
   .news-text { color: #24292e; font-size: 0.92rem; line-height: 1.55; }
   
   /* Filter System */
   #filter-container { margin: 20px 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .filter-btn { padding: 6px 14px; border: 1px solid #e1e4e8; border-radius: 20px; background-color: #f6f8fa; color: #586069; font-size: 0.85em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-  .filter-btn.active { background: linear-gradient(135deg, #ff4d6d, #ff7eb3); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(255,77,109,0.3); }
+  .filter-btn.active { background: linear-gradient(135deg, var(--accent-pink), var(--accent-blue)); color: white; border-color: transparent; box-shadow: 0 4px 10px rgba(113,152,232,0.3); }
   
   /* 🌟 核心修复：彻底避开主题全局样式的独立排版系统 🌟 */
   .zmy-card-container {
@@ -77,15 +78,15 @@ redirect_from:
     margin-bottom: 24px !important;
     border-radius: 16px !important;
     background: #ffffff !important;
-    border: 1px solid rgba(255,77,109,0.15) !important;
-    box-shadow: 0 8px 24px rgba(255,77,109,0.08) !important;
+    border: 1px solid rgba(113,152,232,0.2) !important;
+    box-shadow: 0 8px 24px rgba(113,152,232,0.1) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
     box-sizing: border-box !important;
   }
   .zmy-card:hover {
     transform: translateY(-4px) !important;
-    box-shadow: 0 12px 32px rgba(255,77,109,0.18) !important;
-    border: 1px solid rgba(255,77,109,0.35) !important;
+    box-shadow: 0 12px 32px rgba(113,152,232,0.2) !important;
+    border: 1px solid rgba(113,152,232,0.4) !important;
   }
   
   /* 左侧图片区域：强行霸占40% */
@@ -114,14 +115,14 @@ redirect_from:
     position: absolute !important;
     top: -1px !important;
     left: -1px !important;
-    background: linear-gradient(135deg, #ff4d6d 0%, #ff7eb3 100%) !important;
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%) !important;
     color: #fff !important;
     padding: 5px 14px !important;
     font-size: 0.85rem !important;
     font-weight: 850 !important;
     border-radius: 8px 0 12px 0 !important;
     z-index: 10 !important;
-    box-shadow: 2px 2px 10px rgba(255,77,109,0.4) !important;
+    box-shadow: 2px 2px 10px rgba(113,152,232,0.4) !important;
     letter-spacing: 0.5px !important;
     margin: 0 !important;
   }
@@ -166,7 +167,7 @@ redirect_from:
   .zmy-author-self {
     font-weight: 850 !important;
     font-style: italic !important;
-    background: linear-gradient(135deg, #d500f9 0%, #ff1744 100%) !important;
+    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-size: 1.05rem !important;
@@ -204,20 +205,20 @@ redirect_from:
   .zmy-btn {
     font-size: 0.88rem !important;
     padding: 6px 18px !important;
-    background: linear-gradient(135deg, #ff4d6d 0%, #ff758c 100%) !important;
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-blue) 100%) !important;
     color: #ffffff !important;
     border-radius: 999px !important;
     font-weight: 850 !important;
     text-decoration: none !important;
     border: none !important;
-    box-shadow: 0 4px 12px rgba(255, 77, 109, 0.35) !important;
+    box-shadow: 0 4px 12px rgba(113, 152, 232, 0.35) !important;
     transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
     margin: 0 !important;
     display: inline-block !important;
   }
   .zmy-btn:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 16px rgba(255, 77, 109, 0.45) !important;
+    box-shadow: 0 6px 16px rgba(113, 152, 232, 0.45) !important;
     filter: brightness(1.05) !important;
   }
 
@@ -242,15 +243,15 @@ redirect_from:
   
   <div class="lang-panel active" data-lang-panel="en" role="tabpanel">
     <div class="research-intro">
-      <p>Welcome to my homepage! I'm currently an Undergrad student in the <a href="https://www.sc.sdu.edu.cn">School of Software</a>, <a href="https://www.sdu.edu.cn">Shandong University</a>, under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a> and Prof. <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>.</p>
-      <p>My research interests include <strong>Multimodal Large Language Models, robust representation learning, and trustworthy AI</strong>.</p>
+      <p>Welcome to my homepage! I'm currently an Undergrad student in the <a href="https://www.sc.sdu.edu.cn">School of Software</a>, <a href="https://www.sdu.edu.cn">Shandong University</a>, under the supervision of Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>, co-advised by Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a>, and closely collaborating with Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a>.</p>
+      <p>My research interests include <strong>World Model, Agent and Information Retrieval</strong>.</p>
     </div>
   </div>
   
   <div class="lang-panel" data-lang-panel="zh" role="tabpanel">
     <div class="research-intro">
-      <p>欢迎来到我的主页！我目前是山东大学<a href="https://www.sc.sdu.edu.cn">软件学院</a>的本科生，师从 Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a> 与 Prof. <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>。</p>
-      <p>我的研究兴趣包括<strong>多模态大语言模型、鲁棒表征学习与可信AI研究</strong>。</p>
+      <p>欢迎来到我的主页！我目前是山东大学<a href="https://www.sc.sdu.edu.cn">软件学院</a>的本科生，师从 Prof. <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>，并由 Dr. <a href="https://lee-zixu.github.io/">Zixu Li</a> 共同指导，同时与 Dr. <a href="https://zhihfu.github.io/">Zhiheng Fu</a> 保持紧密合作。</p>
+      <p>我的研究兴趣包括<strong>世界模型、智能体与信息检索</strong>。</p>
     </div>
   </div>
 </div>
@@ -308,6 +309,10 @@ redirect_from:
   </div>
   <div class="news-grid">
     <div class="news-card">
+      <div class="news-date">2026.09.20</div>
+      <div class="news-text">🎉🎉 Thrilled to share that our team won the <strong>2nd Place 🥈</strong> in the SceneFun3D Benchmark Challenge at the Open-World 3D Scene Understanding and Representations (OpenSUN3D) Workshop @ ECCV 2026! Congratulations to all members!</div>
+    </div>
+    <div class="news-card">
       <div class="news-date">2026.03.03</div>
       <div class="news-text">🎉🎉 One paper was accepted by <strong>CVPR 2026</strong>! Congratulations to all co-authors!</div>
     </div>
@@ -334,7 +339,7 @@ redirect_from:
   <div class="zmy-card-container">
   
     <!-- ConeSep Paper -->
-    <div class="zmy-card" data-tags="CVPR 2026, Multimodal Understanding, Robustness">
+    <div class="zmy-card" data-tags="Multimodal Understanding, Robustness">
       <div class="zmy-card-img">
         <div class="zmy-badge">CVPR 2026</div>
         <img src="images/ConeSep-CVPR26.png" alt="ConeSep">
@@ -351,7 +356,6 @@ redirect_from:
           <a href="https://liqiangnie.github.io/index.html">Liqiang Nie</a>
         </div>
         <div class="zmy-badge-container">
-          <span class="zmy-inner-tag">CVPR 2026</span>
           <span class="zmy-inner-tag">Multimodal Understanding</span>
           <span class="zmy-inner-tag">Robustness</span>
         </div>
@@ -364,7 +368,7 @@ redirect_from:
     </div>
 
     <!-- HINT Paper -->
-    <div class="zmy-card" data-tags="ICASSP 2026, First Author, Multimodal Understanding">
+    <div class="zmy-card" data-tags="First Author, Multimodal Understanding">
       <div class="zmy-card-img">
         <div class="zmy-badge">ICASSP 2026</div>
         <img src="images/HINT-ICASSP26.png" alt="HINT">
@@ -382,7 +386,6 @@ redirect_from:
           <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm">Yupeng Hu</a>📧
         </div>
         <div class="zmy-badge-container">
-          <span class="zmy-inner-tag">ICASSP 2026</span>
           <span class="zmy-inner-tag">First Author</span>
           <span class="zmy-inner-tag">Multimodal Understanding</span>
         </div>
@@ -399,6 +402,9 @@ redirect_from:
 
 # 🏆 Honors and Awards
 *   *2025.10*, **Grand Prize** in the CICAS Smart Power Scenario Competition.
+
+# 🥈 Competitions
+*   **2nd place 🥈**, ECCV OpenSUN3D Workshop, SceneFun3D Benchmark Challenge, 2026. [Link](https://eval.ai/web/challenges/challenge-page/2466/leaderboard/6119)
 
 # 📖 Educations
 *   *2023.09 - Present*, Undergrad in the School of Software, Shandong University.
@@ -449,7 +455,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  const tagOrder = ['First Author', 'CVPR 2026', 'ICASSP 2026', 'Multimodal Understanding', 'Robustness'];
+  const tagOrder = ['First Author', 'Multimodal Understanding', 'Robustness'];
   const sortedTags = Object.keys(tagCounts).sort((a, b) => {
     const ia = tagOrder.indexOf(a);
     const ib = tagOrder.indexOf(b);
